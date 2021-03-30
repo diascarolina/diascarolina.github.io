@@ -56,7 +56,7 @@ h2 {
   color: #fff;
 }
 
-.about,.skills,
+.text,.skills,
 .education,.languages,
 .contact, .experience {
   padding: 40px;
@@ -165,81 +165,10 @@ header hr {
   width: 50%;
 }
 
-/* about section */
-.about {
+/* text section */
+.text {
   background: #fff;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
-}
-
-/* skills section */
-.skills {
-  background: #a4c7b9;
-  color: #a51c30;
-}
-.skills .progress {
-  border-radius: 0px;
-  height: 4px;
-}
-.skills .progress .progress-bar-primary {
-  background: #383838;
-}
-.skills strong {
-  display: inline-block;
-  font-weight: normal;
-  padding-bottom: 6px;
-}
-
-/* education section */
-.education {
-  background: #666666;
-  color: #f5f5f5;
-}
-.education .education-content {
-  padding-bottom: 14px;
-}
-.education h5 {
-  display: inline-block;
-}
-.education span {
-  padding-right: 10px;
-  padding-left: 20px;
-}
-
-/* languages section */
-.languages {
-  background: #fff;
- box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
-}
-.languages ul {
-  padding: 10px;
-}
-.languages ul li {
-  padding-bottom: 6px;
-}
-
-/* contact section */
-.contact {
-  background: #fff;
- box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
-}
-.contact .fa {
-  padding-right: 6px;
-}
-
-/* experience section */
-.experience {
-  background: #666666;
-  color: #f5f5f5;
-}
-.experience .experience-content {
-  padding-bottom: 14px;
-}
-.experience h5 {
-  display: inline-block;
-}
-.experience span {
-  padding-right: 10px;
-  padding-left: 20px;
 }
 
 /* footer section */
