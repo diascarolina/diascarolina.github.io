@@ -157,6 +157,14 @@ header hr {
   width: 100px;
 }
 
+/* center image */
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 /* about section */
 .about {
   background: #fff;

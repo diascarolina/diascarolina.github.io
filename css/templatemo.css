@@ -159,13 +159,13 @@ header hr {
 
 /* about section */
 .about {
-  background: #f2b4b4;
+  background: #fff;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 
 /* skills section */
 .skills {
-  background: #78c4d4;
+  background: #B6E5D8;
   color: #000;
 }
 .skills .progress {
