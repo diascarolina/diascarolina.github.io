@@ -53,7 +53,7 @@ h2 {
 }
 
 .white {
-  color: #fff;
+  color: #000000;
 }
 
 .about,.skills,
@@ -159,13 +159,13 @@ header hr {
 
 /* about section */
 .about {
-  background: #fff;
+  background: #c4faea;
   box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 
 /* skills section */
 .skills {
-  background: #B6E5D8;
+  background: #f5ccaa;
   color: #000;
 }
 .skills .progress {
@@ -183,7 +183,7 @@ header hr {
 
 /* education section */
 .education {
-  background: #666666;
+  background: #f5ccaa;
   color: #f5f5f5;
 }
 .education .education-content {
@@ -199,7 +199,7 @@ header hr {
 
 /* languages section */
 .languages {
-  background: #fff;
+  background: #c4faea;
  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 .languages ul {
@@ -211,7 +211,7 @@ header hr {
 
 /* contact section */
 .contact {
-  background: #fff;
+  background:#c4faea;
  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 .contact .fa {
@@ -220,7 +220,7 @@ header hr {
 
 /* experience section */
 .experience {
-  background: #666666;
+  background: #f5ccaa;
   color: #f5f5f5;
 }
 .experience .experience-content {
