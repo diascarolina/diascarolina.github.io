@@ -2561,9 +2561,9 @@ input[type="button"].btn--primary:focus {
 }
 
 .skill-bars-fat li {
-    height: 5.2rem;
+    height: 3rem;
     background: transparent;
-    margin-bottom: 5.2rem;
+    margin-bottom: 4rem;
     padding: 0;
     position: relative;
 }
@@ -3883,7 +3883,7 @@ input[type="button"].btn--primary:focus {
  * ------------------------------------------------------------------- */
 .s-resume {
     background-color: white;
-    padding-top: calc(6 * var(--space));
+    padding-top: calc(2 * var(--space));
     padding-bottom: var(--vspace-4);
 }
 
