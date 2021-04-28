@@ -99,8 +99,8 @@
     /* color-1(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: rgb(243, 40, 209);
-    --color-2: rgb(243, 40, 209);
+    --color-1: #b679ea;
+    --color-2: #b679ea;
 
     /* theme color variations
      */
@@ -1646,12 +1646,12 @@ h1, .h1 {
 }
 
 h2, .h2, h3, .h3, h4, .h4 {
-    margin-top: var(--vspace-2_5);
+    margin-top: var(--vspace-0_5);
     margin-bottom: var(--vspace-0_5);
 }
 
 h5, .h5, h6, .h6 {
-    margin-top: var(--vspace-1_5);
+    /* margin-top: var(--vspace-1_5); */
     margin-bottom: var(--vspace-0_5);
 }
 
