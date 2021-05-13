@@ -99,8 +99,8 @@
     /* color-1(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: #b679ea;
-    --color-2: #b679ea;
+    --color-1: #a650f1;
+    --color-2: #a650f1;
 
     /* theme color variations
      */
@@ -3884,7 +3884,7 @@ input[type="button"].btn--primary:focus {
 .s-resume {
     background-color: white;
     padding-top: calc(2 * var(--space));
-    padding-bottom: var(--vspace-4);
+    padding-bottom: var(--vspace-3);
 }
 
 .s-resume__section {
@@ -3962,7 +3962,7 @@ input[type="button"].btn--primary:focus {
 .s-portfolio {
     background-color: var(--color-white);
     padding-top: calc(4 * var(--space));
-    padding-bottom: var(--vspace-5);
+    padding-bottom: var(--vspace-1);
 }
 
 .s-portfolio h3 {
