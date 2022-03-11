@@ -76,7 +76,7 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 blog_name: blog = random(Post)  # your blog must have a name for it to show up in the nav bar
 blog_description: ---
-permalink: /blog/:year/:month/:title/
+permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
