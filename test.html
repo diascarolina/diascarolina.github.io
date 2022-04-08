@@ -39,24 +39,88 @@
                     <h1>Test Title</h1>
 
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, minus doloremque! Dolor cumque culpa a sapiente voluptatibus asperiores in, facere voluptate distinctio incidunt laudantium, et fuga temporibus eaque tempore commodi.
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque totam et, modi voluptatem quis non labore natus repudiandae commodi provident voluptatibus, ratione, corporis numquam saepe quae culpa ab facere illo!
-
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque facilis culpa enim sunt maxime voluptates explicabo, dolorum natus placeat pariatur, tempore quam, quae expedita officia ad incidunt ut possimus illum.
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur tenetur corporis natus quas ducimus beatae esse sapiente error et placeat? Consequuntur quo aperiam quia obcaecati cumque sapiente commodi autem incidunt.
-
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, dolor consequuntur! Minus neque esse nihil, saepe modi molestias dignissimos id earum eligendi numquam, maiores a? Eum, atque. Itaque, id voluptates?Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque nobis corrupti, dolor quasi aperiam nihil modi accusantium! Unde pariatur aut qui sed! Sunt eligendi quos saepe, soluta commodi atque consequatur?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint architecto nisi laboriosam id sequi labore voluptate, repudiandae error modi odio, sed asperiores pariatur voluptas maiores! Harum molestias voluptas rem perspiciatis!Loremlorem
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. A necessitatibus odit nemo quae perspiciatis pariatur quia odio mollitia voluptatem impedit eos voluptatibus accusamus similique ex obcaecati nulla, tempora ipsum voluptates!Loremlorem
-
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi dolorem animi quibusdam ea ipsum, cupiditate sed nihil vel natus ipsam maxime itaque ex dolorum perspiciatis tempora est nostrum neque recusandae?
                     </p>
+                        
+                    <h2>Problem</h2>
+                        
+                        <p>For sequences of numbers, <em>limit inferior</em> and <em>limit
+                        superior</em> are defined as $\liminf (a_n):=\sup\{\inf\{a_k:k \ge
+                        n\}\}$ and $\limsup (a_n):=\inf\{\sup\{a_k:k \ge n\}\}$ respectively;
+                        for sequences of sets, they are defined as $\displaystyle
+                        \bigcup_{n=1}^{\infty} \bigcap_{k=n}^{\infty} A_k$ and $\displaystyle
+                        \bigcap_{n=1}^{\infty} \bigcup_{k=n}^{\infty} A_k$ respectively.</p>
+                        
+                        <p><bold>Why are they consistent?</bold></p>
+                        
+                        <h2>Discussion</h2>
+                        
+                        <p>It suffices to find a relation between '&lt;' and '&sube;': $\{x
+                        \le a\} \subseteq \{x \le b\} \iff a \le b$.</p>
+                        
+                        <p>Claim: $\displaystyle \bigcup_{a \in A} \{x \le a\} = \{x \le \sup
+                        A\}$.</p>
+                        
+                        <p><em>Proof</em>:</p>
+                        
+                        $$
+                          \begin{aligned}
+                            & x \in \bigcup_{a \in A} \{x \le a\} \\
+                            \iff& x \le a \;\forall a \in A \\
+                            \iff& x \text{ is a lower bound of } A \\
+                            \iff& x \le \inf A
+                          \end{aligned}
+                        $$
+                 
+                        
+                        <p>The last step is due to the defintion of infimum (<em>greatest</em>
+                        lower bound).</p>
+                        
+                        <p>With the above claim, one has</p>
+                        
+                        $$ \begin{aligned}
+                            & \bigcap_{n=1}^{\infty} \bigcup_{k=n}^{\infty} \{x \le a_k\} \\
+                            =& \bigcap_{n=1}^{\infty} \bigcup_{a \in \{a_k:k \ge n\}} \{x \le a\} \\
+                            =& \bigcap_{n=1}^{\infty} \{ x \le \sup \{a_k:k \ge n\}\} \\
+                            =& \{x \le \inf\sup \{a_k:k \ge n\}\}
+                          \end{aligned}
+                        $$
+                        
+                        <p>Hence, one can see that $\sup\inf \{a_k:k \ge n\} \le \inf\sup
+                        \{a_k:k \ge n\}$ and $\displaystyle \bigcup_{n=1}^{\infty}
+                        \bigcap_{k=n}^{\infty} \{x \le a_k\} \subseteq \bigcap_{n=1}^{\infty}
+                        \bigcup_{k=n}^{\infty} \{x \le a_k\}$ share something in common.</p>
+
+                        $$ E = m\cdot c^2 $$
+
+                        \begin{equation} \label{eq1}
+                        \begin{split}
+                        A & = \frac{\pi r^2}{2} \\
+                        & = \frac{1}{2} \pi r^2
+                        \end{split}
+                        \end{equation}
+
+                        <pre>
+                            <code>
+                              p { color: red; }
+                              body { background-color: #eee; }
+                            </code>
+                        </pre>
+
                 </div>
             </section>
             <hr class="m-0" />
         </div>
+        <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            }
+          });
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
