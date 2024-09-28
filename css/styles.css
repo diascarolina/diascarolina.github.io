@@ -11496,6 +11496,14 @@ section.resume-section .resume-section-content {
   color: #03dac6;
 }
 
+.dark-mode #sideNav {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .resume-section {
+  background-color: #121212;
+}
+
 .dark-mode #darkModeToggle {
   background-color: #bb86fc;
   color: #121212;
@@ -11503,4 +11511,17 @@ section.resume-section .resume-section-content {
 
 .dark-mode #darkModeToggle:hover {
   background-color: #03dac6;
+}
+
+/* Additional styles for better contrast and readability in dark mode */
+.dark-mode .text-muted {
+  color: #a0a0a0 !important;
+}
+
+.dark-mode .border-top {
+  border-top-color: #333 !important;
+}
+
+.dark-mode .list-inline-item:not(:last-child) {
+  border-right-color: #333;
 }
