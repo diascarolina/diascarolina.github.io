@@ -37,23 +37,21 @@ window.addEventListener('DOMContentLoaded', event => {
 // Dark mode toggle functionality
 document.addEventListener('DOMContentLoaded', (event) => {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    const html = document.documentElement;
+    const body = document.body;
     
     // Check for saved theme preference or use default
     const currentTheme = localStorage.getItem('theme');
     if (currentTheme) {
-        html.classList.add(currentTheme);
+        body.classList.add(currentTheme);
     }
 
     // Toggle dark mode
     darkModeToggle.addEventListener('click', () => {
-        if (html.classList.contains('dark-mode')) {
-            html.classList.remove('dark-mode');
-            html.classList.add('light-mode');
+        if (body.classList.contains('dark-mode')) {
+            body.classList.remove('dark-mode');
             localStorage.setItem('theme', 'light-mode');
         } else {
-            html.classList.remove('light-mode');
-            html.classList.add('dark-mode');
+            body.classList.add('dark-mode');
             localStorage.setItem('theme', 'dark-mode');
         }
     });
