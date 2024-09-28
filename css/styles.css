@@ -11439,3 +11439,68 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.dark-mode .bg-primary {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .text-primary {
+  color: #bb86fc !important;
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode h5, .dark-mode h6,
+.dark-mode .h1, .dark-mode .h2, .dark-mode .h3, .dark-mode .h4, .dark-mode .h5, .dark-mode .h6 {
+  color: #bb86fc;
+}
+
+.dark-mode .subheading {
+  color: #03dac6;
+}
+
+.dark-mode .social-icons .social-icon {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+.dark-mode .social-icons .social-icon:hover {
+  background-color: #03dac6;
+}
+
+.dark-mode .dev-icons {
+  color: #bb86fc;
+}
+
+.dark-mode a {
+  color: #03dac6;
+}
+
+.dark-mode a:hover {
+  color: #018786;
+}
+
+.dark-mode .navbar-dark .navbar-nav .nav-link {
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar-dark .navbar-nav .nav-link:hover,
+.dark-mode .navbar-dark .navbar-nav .nav-link:focus {
+  color: #03dac6;
+}
+
+.dark-mode #darkModeToggle {
+  background-color: #bb86fc;
+  color: #121212;
+}
+
+.dark-mode #darkModeToggle:hover {
+  background-color: #03dac6;
+}
