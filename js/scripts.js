@@ -39,11 +39,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
     const darkModeToggle = document.getElementById('darkModeToggle');
     const body = document.body;
     
-    // Check for saved theme preference or use default
-    const currentTheme = localStorage.getItem('theme');
-    if (currentTheme) {
-        body.classList.add(currentTheme);
-    }
+    // Check for saved theme preference or use dark mode as default
+    const currentTheme = localStorage.getItem('theme') || 'dark-mode';
+    body.classList.add(currentTheme);
 
     // Toggle dark mode
     darkModeToggle.addEventListener('click', () => {
